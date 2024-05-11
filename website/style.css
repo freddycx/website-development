@@ -1,10 +1,9 @@
-
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: grey;
+  background-color: #333;
 }
 
 li {
@@ -20,11 +19,216 @@ li a {
 }
 
 li a:hover {
-  background-color: black
+  background-color: #111;
 }
-.img{
-   padding-top : 10px;
-   padding-bottom: 10px;
-   padding-right: 10px;
-   padding-left: 10px;
+.chick{ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
+
+}
+
+.column{
+  float: left;
+  width:25%;
+  padding :2px;
+}
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.gallery{
+  width: 900px;
+  display: flex;
+  overflow: scroll;
+}
+.gallery div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+  padding: 10px ;
+  flex: none;
+} 
+.gallery div img {
+  width: 100%;
+  margin-top:auto ;
+
+}
+.gallery ::-webkit-scrollbar{
+  display: none;
+
+}
+.gallery-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10%auto;
+}
+#backbtn,#nextbtn{
+  width: 50px;
+  cursor: pointer;
+  margin:80px ;
+
+}
+ 
+
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+ }
+ 
+ * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px ;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}   
+
+   
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px; /* Round the left corners */
+  width: 200px;
+}
+
+.search-button {
+  position: absolute;
+  top: 0;
+  left: -1px; /* Adjust position to overlap with left border of input */
+  border: none;
+  background-color: #007bff; /* Blue color, you can change it */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 0 20px 20px 0; /* Round the right corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.image-content {
+  flex: 1;
+  padding: 20px;
+  text-align: right;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+}
+.h5{
+  text-align: center;
+  padding :40px;
+  margin:20px;
+  
+}
+.h1{
+  text-align: center;
+  
+}.separator {
+  width: 80% ;
+  border: 1px solid grey;
+  margin: 20px auto;
+}
+
+
+.follow-us {
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.social-icon:hover {
+  background-color: #555;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+.whatsapp{
+  background-color:	#075E54 ;
+}	
+
+.footer {
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer-column {
+  flex: 1;
+  margin: 10px;
+  text-align: left;
+}
+.footer-column h3 {
+  
+}
+.footer-column ul {
+  list-style-type: none;
+  padding: 5px;
+}
+.footer-column ul li {
+  margin-bottom: 5px;
+  display: block;
 }
